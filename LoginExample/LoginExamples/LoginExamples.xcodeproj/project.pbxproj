@@ -11,10 +11,13 @@
 		982AEFA72237A11900B43C92 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982AEFA62237A11900B43C92 /* Alert.swift */; };
 		98306EED22378B0800C1A218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98306EEC22378B0800C1A218 /* AppDelegate.swift */; };
 		98306EEF22378B0800C1A218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98306EEE22378B0800C1A218 /* ViewController.swift */; };
-		98306EF222378B0800C1A218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98306EF022378B0800C1A218 /* Main.storyboard */; };
+		98306EF222378B0800C1A218 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98306EF022378B0800C1A218 /* Onboarding.storyboard */; };
 		98306EF422378B0900C1A218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98306EF322378B0900C1A218 /* Assets.xcassets */; };
 		98306EF722378B0900C1A218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98306EF522378B0900C1A218 /* LaunchScreen.storyboard */; };
 		98306EFF22378B5700C1A218 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98306EFE22378B5700C1A218 /* GoogleService-Info.plist */; };
+		98F40C512239FD2400653E83 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F40C502239FD2400653E83 /* HomeViewController.swift */; };
+		98F40C532239FD3500653E83 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F40C522239FD3500653E83 /* LogOutViewController.swift */; };
+		98F40C55223A084B00653E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F40C54223A084B00653E83 /* Main.storyboard */; };
 		BCF03F012F6E9C97BA456E44 /* Pods_LoginExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A62F9E4365225B1F85C2DC /* Pods_LoginExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +28,14 @@
 		98306EE922378B0800C1A218 /* LoginExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98306EEC22378B0800C1A218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98306EEE22378B0800C1A218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98306EF122378B0800C1A218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98306EF122378B0800C1A218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		98306EF322378B0900C1A218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98306EF622378B0900C1A218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98306EF822378B0900C1A218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98306EFE22378B5700C1A218 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98F40C502239FD2400653E83 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98F40C522239FD3500653E83 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		98F40C54223A084B00653E83 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D3E9C7DC1DA49EA2EE14282E /* Pods-LoginExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginExamples/Pods-LoginExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		D84D185B6317909F14198CDC /* Pods-LoginExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginExamples/Pods-LoginExamples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +77,10 @@
 				98306EEE22378B0800C1A218 /* ViewController.swift */,
 				982AEFA42237A01500B43C92 /* SignUpViewController.swift */,
 				982AEFA62237A11900B43C92 /* Alert.swift */,
-				98306EF022378B0800C1A218 /* Main.storyboard */,
+				98306EF022378B0800C1A218 /* Onboarding.storyboard */,
+				98F40C54223A084B00653E83 /* Main.storyboard */,
+				98F40C502239FD2400653E83 /* HomeViewController.swift */,
+				98F40C522239FD3500653E83 /* LogOutViewController.swift */,
 				98306EF322378B0900C1A218 /* Assets.xcassets */,
 				98306EF522378B0900C1A218 /* LaunchScreen.storyboard */,
 				98306EFE22378B5700C1A218 /* GoogleService-Info.plist */,
@@ -159,9 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				98306EF722378B0900C1A218 /* LaunchScreen.storyboard in Resources */,
+				98F40C55223A084B00653E83 /* Main.storyboard in Resources */,
 				98306EFF22378B5700C1A218 /* GoogleService-Info.plist in Resources */,
 				98306EF422378B0900C1A218 /* Assets.xcassets in Resources */,
-				98306EF222378B0800C1A218 /* Main.storyboard in Resources */,
+				98306EF222378B0800C1A218 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F40C532239FD3500653E83 /* LogOutViewController.swift in Sources */,
+				98F40C512239FD2400653E83 /* HomeViewController.swift in Sources */,
 				982AEFA52237A01500B43C92 /* SignUpViewController.swift in Sources */,
 				98306EEF22378B0800C1A218 /* ViewController.swift in Sources */,
 				982AEFA72237A11900B43C92 /* Alert.swift in Sources */,
@@ -247,12 +259,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		98306EF022378B0800C1A218 /* Main.storyboard */ = {
+		98306EF022378B0800C1A218 /* Onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				98306EF122378B0800C1A218 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Onboarding.storyboard;
 			sourceTree = "<group>";
 		};
 		98306EF522378B0900C1A218 /* LaunchScreen.storyboard */ = {

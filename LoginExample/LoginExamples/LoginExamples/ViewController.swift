@@ -23,7 +23,9 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
-        // Do any additional setup after loading the view, typically from a nib.
+        Auth.auth().addStateDidChangeListener { (user, error) in
+            
+        }
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
