@@ -16,7 +16,16 @@ class LogOutViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func Logout(_ sender: UIButton) {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
+        guard let window = UIApplication.shared.keyWindow else {return}
+        window.rootViewController = vc
+    }
+    
     /*
     // MARK: - Navigation
 

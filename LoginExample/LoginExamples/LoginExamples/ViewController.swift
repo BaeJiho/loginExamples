@@ -18,14 +18,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBAction func signIn(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
-        Auth.auth().addStateDidChangeListener { (user, error) in
-            
-        }
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
@@ -38,6 +36,10 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             if result != nil {
                 guard let user = result else {return}
                 AlertController.showAlertController(self, title: "info", message: "succes")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let vc = storyboard.instantiateInitialViewController() else {return}
+                guard let window = UIApplication.shared.keyWindow else {return}
+                window.rootViewController = vc
             }
             if error != nil {
                 AlertController.showAlertController(self, title: "error", message: error!.localizedDescription)

@@ -32,6 +32,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Epz-Ml-ox6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="au5-XY-Vqt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -51,7 +52,20 @@
                     <view key="view" contentMode="scaleToFill" id="3xe-3Y-s6V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giU-1t-8yu">
+                                <rect key="frame" x="162" y="318.5" width="51" height="30"/>
+                                <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="Logout:" destination="uLm-Ex-s5x" eventType="touchUpInside" id="J5F-Gn-gWQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="giU-1t-8yu" firstAttribute="centerX" secondItem="3xe-3Y-s6V" secondAttribute="centerX" id="Fwu-3s-QMc"/>
+                            <constraint firstItem="giU-1t-8yu" firstAttribute="centerY" secondItem="3xe-3Y-s6V" secondAttribute="centerY" id="hU2-7Q-Vrz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FEv-wv-3su"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="LogOut" id="eXP-No-x6S"/>

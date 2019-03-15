@@ -23,6 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        if !UserDefaults.standard.bool(forKey: "register") {
+            let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
+        if UserDefaults.standard.bool(forKey: "register") {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
+        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -56,7 +67,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 return
             }
             if authResult != nil {
-//                self.window?.rootViewController = HomeViewController()
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateInitialViewController()
+                self.window?.rootViewController = vc
             }
             // User is signed in
             // ...

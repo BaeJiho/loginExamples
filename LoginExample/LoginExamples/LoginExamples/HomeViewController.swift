@@ -12,7 +12,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        UserDefaults.standard.set(true, forKey: "register")
+        UserDefaults.standard.synchronize()
     }
     
 
